@@ -175,11 +175,13 @@ $('#showMenu').click(function(){
     $('nav').animate({left:'0%'});
     $('hander').animate({left:'20%'});
     $('.zz').fadeIn();
+    $('html').css({'overflow':'hidden'})
 })
 $('.edit').click(function(){
     $('nav').animate({left:'-90%'})
     $('hander').animate({left:'0%'});
     $('.zz').fadeOut();
+    $('html').css({'overflow':'auto'})
 })
 </script>
 

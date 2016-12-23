@@ -1,5 +1,5 @@
 /* 全局背景、字体、字号、颜色、行高、页边距等 */
-body{width: 100%;overflow-x: hidden; max-width: 750px; overflow: -Scroll;overflow-x: hidden; margin:0px;color:#333;line-height:180%; background:#ccc; font: 14px/1.5 "微软雅黑",Helvetica,Tahoma,Arial,sans-serif}
+body{width: 100%;overflow-x: hidden; max-width: 750px;  margin:0px;color:#333;line-height:180%; background:#ccc; font: 14px/1.5 "微软雅黑",Helvetica,Tahoma,Arial,sans-serif}
 
 /* CSS3盒子模型 */
 ul,li,dl,dt,dd,ol,h1,h2,h3,h4,h5,h6,p{list-style-type:none;margin:0;padding:0;display:block;}

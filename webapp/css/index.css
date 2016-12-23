@@ -4,7 +4,7 @@ hander{
     width: 100%;
 }
 .topBar{
-    position: absolute;
+    position: fixed;
     top: 0px;
     height: 50px;
     background: #262932;
@@ -83,7 +83,7 @@ nav{
     height: 100%;
     background: #262932;
     color: #fff;
-    position: absolute;
+    position: fixed;
     left: -90%;
     box-shadow: 3px 0px 3px rgba(0,0,0,0.5);
     z-index: 999;
