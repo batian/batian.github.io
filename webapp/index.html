@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/font-awesome.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-    <hander style="display: none">
+    <hander>
         <!--顶部导航条-->
         <section>
             <div class="topBar">
-                <div class="iconL iconS">
+                <div class="iconL iconS" id="showMenu">
                     <i class="fa fa-align-justify"></i>
                 </div>
                 <div class="text">
@@ -59,8 +60,8 @@
     
 
     <!--侧边导航-->
-    <nav style="display: none">
-        <div class="edit"><i class="fa fa-pencil"></i></div>
+    <nav>
+        <div class="edit"><i class="fa fa-arrow-left"></i></div>
         <div class="head">
             <div class="headImg">
                 <img src="./img/index/3.jpg" alt="">
@@ -75,7 +76,7 @@
                 <li>
                     <a href="#">
                         <i class="fa fa-user"></i>
-                        <span>首页</span>
+                        <span><a href="index.html">首页</a></span>
                         <i class="fa fa-chevron-right"></i>
                     </a>
                 </li>
@@ -105,7 +106,7 @@
     </nav>
 
     <!--列表页-->
-    <div class="lists">
+    <div style="display: none" class="lists">
         <!--顶部导航条-->
         <section>
             <div class="topBar">
@@ -167,5 +168,20 @@
         </div>
     </div>
     
+<div class="zz"></div>
+
+<script>
+$('#showMenu').click(function(){
+    $('nav').animate({left:'0%'});
+    $('hander').animate({left:'20%'});
+    $('.zz').fadeIn();
+})
+$('.edit').click(function(){
+    $('nav').animate({left:'-90%'})
+    $('hander').animate({left:'0%'});
+    $('.zz').fadeOut();
+})
+</script>
+
 </body>
 </html>
