@@ -1,0 +1,73 @@
+.topBar{
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    background: #262932;
+    width: 100%;
+    color: #fff;
+    line-height: 50px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3)
+}
+.topBar .text{
+    text-align: center;
+    font-size: 16px;
+}
+.topBar .iconS{
+    position: absolute;
+    width: 55px;
+    text-align: center;
+    top: 0px;
+    font-size: 20px;
+}
+.topBar .iconL{
+    left: 0px;   
+}
+
+.topBar .iconR{
+    right: 0px;   
+}
+
+.main{
+    margin-top: 50px;
+    width: 100%;
+}
+.main img{
+    width: 100%;
+}
+
+.main section{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+    margin-top: 6px;
+}
+.main section h4{
+    color: #f0716c;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px;
+}
+.main section p{
+    color: #666;
+    font-size: 12px;
+    line-height: 22px;
+}
+.main section .imgbox{
+    margin-top: 10px;
+    border-radius:8px;
+    overflow: hidden;
+    border: 1px solid #ccc; 
+    position: relative;
+}
+.main section .imgbox .add{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #f0716c;
+    border-radius: 6px;
+    color: #fff;
+    padding: 4px 8px 5px;
+    font-size: 12px; 
+}
