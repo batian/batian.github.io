@@ -1,12 +1,18 @@
+hander{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+}
 .topBar{
-    position: fixed;
+    position: absolute;
     top: 0px;
     height: 50px;
     background: #262932;
     width: 100%;
     color: #fff;
     line-height: 50px;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3)
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 .topBar .text{
     text-align: center;
@@ -70,4 +76,163 @@
     color: #fff;
     padding: 4px 8px 5px;
     font-size: 12px; 
+}
+
+nav{
+    width: 85%;
+    height: 100%;
+    background: #262932;
+    color: #fff;
+    position: absolute;
+    left: 0px;
+    box-shadow: 3px 0px 3px rgba(0,0,0,0.5);
+}
+
+nav .head{
+    text-align: center
+}
+nav .edit{
+    height: 50px;
+    line-height: 50px;
+    width: 55px;
+    text-align: center;
+    font-size: 20px;
+}
+nav .headImg{
+    width: 40%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    border: 5px solid #f0716c;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8)
+}
+nav .headImg img{
+    width: 100%;
+}
+nav .des h3{
+    color: #f0716c;
+    margin: 3px 0 2px;
+    font-size: 18px;
+}
+nav .des p{
+    color: #ccc;
+    font-size: 12px;
+}
+nav .menu{
+    color: #eee;
+    margin-top: 20px;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #444;
+}
+nav .menu ul li{
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #222;
+}
+nav .menu ul li:hover{
+    background: #1c1d22;
+}
+nav .menu ul li:hover i{
+    color: #f0716c;
+}
+nav .menu ul li i{
+    width: 55px;
+    text-align: center;
+}
+nav .menu ul li i:last-child{
+    float: right;
+    height: 38px;
+    line-height: 38px;
+}
+
+.topBar .many span{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 10px;
+    
+}
+.topBar .many span.action{
+    background: #fff;
+    color: #222;
+}
+.topBar .many{
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    height: 30px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.lists .list{
+    margin-top:50px; 
+}
+.lists .list ul{
+    padding-top: 6px;
+}
+.lists .list ul li{
+    height: 100px;
+    padding:10px; 
+    background: #fff;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3)
+}
+.lists .list ul li>div{
+    float: left;
+}
+.lists .list ul li .text{
+    margin: 8px 0 0 16px;
+    width: 45%;
+}
+.lists .list ul li .text h4{
+    font-size: 13px;
+    height: 20px;
+    overflow: hidden;
+    margin: 3px 0px;
+    color: #666;
+}
+.lists .list ul li .text p{
+    font-size: 12px;
+    color: #999;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.lists .list ul li .imgBox{
+    width: 30%;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.lists .list ul li .imgBox img{
+    height: 100%;
+    width: auto;
+}
+.lists .list .coll{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    height: 60px;
+    width: 55px;
+    border-left: 1px solid #f0716c;
+    text-align: center; 
+}
+.lists .list .coll i{
+    color: #f0716c;
+    font-size: 22px;
+    margin-top: 10px;
+    width: 55px;
+    
+}
+.lists .list .coll span{
+    color: #999;
+    font-size: 12px;
 }

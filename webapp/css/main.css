@@ -15,7 +15,7 @@ ul,li,dl,dt,dd,ol,h1,h2,h3,h4,h5,h6,p{list-style-type:none;margin:0;padding:0;di
 
 /* 链接 */
 a:link,a:visited{text-decoration:none;}
-a{color: #666;text-decoration:none;}
+a{color: #ccc;text-decoration:none;}
 
 a img,img{border:none; vertical-align:top;}
 
