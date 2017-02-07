@@ -1,0 +1,201 @@
+.container {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-content {
+    background: #fff;
+    box-shadow: 0 0 1px #ccc;
+    padding: 20px 35px;
+    padding-bottom: 50px;
+    margin: 30px 0;
+}
+.container-content .title, .content-title {
+    border-bottom: 3px solid #dcdddd;
+    text-align: left;
+    position: relative;
+}
+.container-content h2, .content-title h2 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.container-content h2:before, .content-title h2:before {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: '';
+    background: #289fd6;
+    width: 100%;
+    height: 3px;
+}
+.analyst-content {
+	text-align: left;
+    padding-top: 20px;
+}
+.analyst-content li {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 15px 0;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+}
+.analyst-content .img {
+    float: left;
+    width: 240px;
+    text-align: center;
+}
+.analyst-content .img img {
+    border: 1px solid #eeeded;
+    margin-bottom: 10px;
+}
+.analyst-content .toqq {
+    padding: 4px 15px;
+    background: #289fd6;
+    color: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.analyst-content .description {
+    margin-left: 280px;
+    position: relative;
+}
+.analyst-content .description h3 {
+    font-size: 24px;
+    font-weight: 100;
+}
+.container-content h3 {
+    font-size: 25px;
+    color: #289fd6;
+    margin: 0 0 10px;
+}
+.analyst-content .description h3 span {
+    color: #999999;
+}
+.analyst-content .description .tuijian {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.analyst-content .description .tuijian .icon {
+    position: relative;
+    top: -2px;
+}
+.icon-xx2 {
+    background: url(../img/icon-xx2.png) no-repeat;
+    width: 16px;
+    height: 16px;
+}
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+.analyst-content .description .info {
+    padding: 30px 0;
+}
+.analyst-content .description > p {
+    color: #6b6b6b;
+}
+.analyst-content .description p {
+    line-height: 26px;
+}
+.red {
+    color: #ff1616;
+}
+.post-page {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 36px;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 30px;
+}
+.post-page .prev {
+    background: url(../img/page-prev.jpg) no-repeat;
+    display: inline-block;
+    width: 93px;
+    height: 36px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    text-indent: 27px;
+    font-family: 微软雅黑;
+    cursor: pointer;
+}
+.post-page .next a, .post-page .prev a, .post-page .curr a {
+    color: #fff;
+}
+.post-page a {
+    margin: 0 2px;
+    padding: 0 5px;
+    color: #929292;
+}
+.post-page .curr {
+    background: url(../img/page-curr.png) no-repeat 0 0;
+    padding: 5px 0 0;
+    display: inline-block;
+    width: 35px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.post-page .next {
+    background: url(../img/page-next.jpg) no-repeat;
+    display: inline-block;
+    width: 93px;
+    height: 36px;
+    color: #fff;
+    text-align: center;
+    float: right;
+    text-indent: -35px;
+    font-family: 微软雅黑;
+    cursor: pointer;
+}
+.post-page .next:hover, .post-page .prev:hover, .post-page .curr:hover{opacity: .8; text-decoration: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

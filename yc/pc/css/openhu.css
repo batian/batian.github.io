@@ -1,0 +1,189 @@
+.OpenBox {
+    background-color: #f1f1f1;
+    
+}
+.clearfix {
+    clear: both;
+}
+.container {
+    width: 1100px;
+    margin: 0 auto
+}
+.clearfix:before {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
+.col-md-6 {
+    width: 50%;
+}
+.OpenBox .loginBox {
+    margin: 45px auto 45px auto;
+    background-color: #fff;
+    width: 100%;
+}
+.loginBox .login_L {
+    border-top: 2px solid #01385a;
+    padding: 35px;
+}
+.loginBox .login_T {
+    font-size: 16px;
+    color: #01385a;
+}
+.loginBox .login {
+    padding: 0px 45px 0px 0px;
+}
+
+.loginBox .login li {
+    margin: 20px 0 0px 0;
+}
+.loginBox .login li input {color: #666;}
+.loginBox .login li input.user {
+    background: url(../img/icon_user_2.png) no-repeat left center;
+   
+    text-indent: 45px;
+}
+.loginBox .login li input.mob {
+    background: url(../img/icon_mobile_2.png) no-repeat left center;
+    text-indent: 45px;
+}
+.loginBox .login li input.mail {
+    background: url(../img/icon_mail_2.png) no-repeat left center;
+    text-indent: 45px;
+}
+.loginBox .login li input.qq {
+    background: url(../img/icon_qq_2.png) no-repeat left center;
+    text-indent: 45px;
+}
+.loginBox .login li input {
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+    padding: 7px 0 7px 0px;
+    border: 1px solid #ececec;
+}
+.loginBox .login li.submit input.but {
+    width: 100%;
+    background-color: #0d84e9;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+}
+.reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.loginBox .login_R {
+    padding: 35px 35px 35px 35px;
+    border-top: 2px solid #c7c7c7;
+    background-color: #ebebeb;
+    line-height: 200%;
+}
+.loginBox .login_R {
+    line-height: 200%;
+}
+.loginBox .login_R .login_remind span {
+    color: #a40000;
+    font-weight: bold;
+}
+.loginBox .login_R .login_Down {
+    margin-top: 28px;
+}
+.col-md-9 {
+    width: 75%;
+}
+.loginBox .login_R .login_Down .down {
+    padding-right: 15px;
+}
+.loginBox .login_R .login_Down .down a {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    background: #f7f7f7;
+    display: block;
+    text-align: center;
+    border: 1px solid #dddada;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #959595;
+    border-radius: 8px;
+}
+.loginBox .login_R .login_Down .down a img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.col-md-3 {
+    width: 25%;
+}
+.loginBox .login_R .login_Down .ewm {
+    background-color: #fff;
+    text-align: center;
+    line-height: 150%;
+    padding: 10px 0;
+    width: 100%;
+}
+.loginBox .login_R .login_Down .ewm img{width: 100%;}
+.loginBox .login_R .login_Down .down a:hover{border: 1px solid #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>关于我们</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.dialogbox.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(document).ready(function() {
+	$.fn.fullpage({
+		slidesColor: ['#1c1c1c', '#C2E5FF', '#FDF6E1', '#E9E9E9', '#F3F3F3', '#F9F3DC'],
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+		scrollingSpeed:500,
+		continuousVertical:true,
+		menu: '#menu',
+		afterRender: function(){
+			$('.screen-main span').each(function(){
+				var $rel = $(this).attr('rel');
+				var $arr = $rel.split(',');
+				$(this).animate({
+					left: $arr[2] + 'px',
+					top: $arr[3] + 'px'
+				}, 300);
+			});
+			$('.inner a').each(function(){
+				var $rel = $(this).attr('rel');
+				var $arr = $rel.split(',');
+				$(this).animate({
+					left: $arr[0] + 'px',
+					top: $arr[1] + 'px'
+				}, 300);
+			});
+		},
+		afterLoad: function(anchorLink, index){
+			if(index == 1){
+				$('.screen-main span').each(function(){
+					var $rel = $(this).attr('rel');
+					var $arr = $rel.split(',');
+					$(this).animate({
+						left: $arr[2] + 'px',
+						top: $arr[3] + 'px'
+					}, 300);
+				});
+			}
+			if(index == 2 || index == 3 || index == 4 || index == 5){
+				$('.inner').eq(index - 2).find('a').each(function(){
+					var $rel = $(this).attr('rel');
+					var $arr = $rel.split(',');
+					$(this).animate({
+						left: $arr[2] + 'px',
+						top: $arr[3] + 'px'
+					}, 300);
+				});
+			}
+			if(index == 6){
+				$('.zanzhu-con a').fadeIn(500);
+			}
+		},
+		onLeave: function(index, direction){
+			if(index == 1){
+				$('.screen-main span').each(function(){
+					var $rel = $(this).attr('rel');
+					var $arr = $rel.split(',');
+					$(this).animate({
+						left: $arr[0] + 'px',
+						top: $arr[1] + 'px'
+					}, 300);
+				});
+			}
+			if(index == 2 || index == 3 || index == 4 || index == 5){
+				$('.inner').eq(index - 2).find('a').each(function(){
+					var $rel = $(this).attr('rel');
+					var $arr = $rel.split(',');
+					$(this).animate({
+						left: $arr[0] + 'px',
+						top: $arr[1] + 'px'
+					}, 300);
+				});
+			}
+			if(index == 6){
+				$('.zanzhu-con a').fadeOut(500);
+			}
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+
+<div class="gy_nav">
+	<a href="../index.html">
+	<div class="box_a">
+		<img src="img/logo.png"/>
+	</div></a>
+</div>
+
+<ul id="menu">
+	<li data-menuanchor="page1" class="active"><a href="#page1">公司简介</a></li>
+	<li data-menuanchor="page2"><a href="#page2">业务介绍</a></li>
+	<li data-menuanchor="page3"><a href="#page3">产品特色</a></li>
+	<li data-menuanchor="page4"><a href="#page4">文化理念</a></li>
+	<li data-menuanchor="page5"><a href="#page5">人才理念</a></li>
+	<li data-menuanchor="page6"><a href="#page6">联系我们</a></li>
+	
+</ul>
+
+<div id="yhh">
+	
+
+
+<div class="section section1">
+	<div class="screen-main inner">
+		<span class="shi1"  rel="-50%,-150,427,150">
+			
+		</span>
+		<span class="shi2" rel="-50%,1200,280,500">
+			<ul>
+				<li class="flip-container " ontouchstart="this.classList.toggle('hover');" id="btn-custom-size">
+				<div class="flipper">
+					<div class="front "><img src="images/zhuan_06.png"></div>
+					<div class="back " ><img src="images/zhuan_03.png"></div>
+				</div>
+				</li>
+				<li class="flip-container " ontouchstart="this.classList.toggle('hover');" id="btn-custom-size_b">
+				<div class="flipper">
+				<div class="front "><img src="images/zhuan_ll.png"></div>
+				<div class="back " ><img src="images/zhuan_ll2.png"></div>
+				</div>
+				</li>
+				<li class="flip-container " ontouchstart="this.classList.toggle('hover');" id="btn-custom-size_c">
+				<div class="flipper">
+				<div class="front "><img src="images/zhuan_ys.png"></div>
+				<div class="back " ><img src="images/zhuan_ys2.png"></div>
+				</div>
+				</li>
+			</ul>
+	</div>
+</div>
+
+
+<div class="section section2">
+	<div class="science-inner inner">
+		<div class="text_box">
+			<p>公司主要经营厦门自贸区两岸商品交易中心的交易产品，有自贸油、自贸铜、自贸铝、自贸银等现货交易品种，未来还会上线其他杠杆交易产品。</p>
+		</div>
+		<a class="stimg1" href="javascript:void(0)" rel="90,450,90,950"><img  src="img/2/1.png"> <p>自贸油</p></a>
+		<a class="stimg2" href="javascript:void(0)" rel="300,450,300,950"><img   src="img/2/2.png"><p>自贸铜</p></a>
+		<a class="stimg3" href="javascript:void(0)" rel="510,450,510,950"><img   src="img/2/3.png"><p>自贸铝</p></a>
+		<a class="stimg4" href="javascript:void(0)" rel="720,450,720,950"><img   src="img/2/4.png"><p>自贸银</p></a>
+		
+		
+	</div>
+</div>
+
+<div class="section section3">
+	<div class="famous-inner inner">
+		<ul>
+			<li>24小时连续交易；周一08：00至周六04：00不间断交易</li>
+			<li>国际同步报价：全球市场，价格公开透明</li>
+			<li>保证金交易：5%—20%的保证金，提高资金利用率</li>
+			<li>双向交易：可做多做空，涨跌均有机会赚钱</li>
+			<li>资金安全：客户资金由银行三方存管，安全有保障</li>
+			<li>交易成本低：成交金额的万分之八，双边收取</li>
+			<li>T+0交易 随时买进卖出，快速增加获利机会，减少投资风险</li>
+		</ul>
+	</div>
+</div>
+<div class="section section4">
+	<div class="social-inner inner">
+		
+			<ul>
+				<li>诚信—人以诚为本，企业以信为本，诚信是盈创发展最坚固的根基</li>
+				<li>专业—专业的团队和态度，是我们服务于客户的资本</li>
+				<li>创新—在互联网时代，所有的创新都只有一个含义：“非同凡响，与众
+不同。”反映在企业经营中，即“革新思想，重构产品，改变未来。创
+新是盈创的灵魂，无创新，不发展。</li>
+				<li>共赢—为客户创造价值，才是我们所追求的企业价值！</li>
+			</ul>
+			<img src="img/ding.png"/>
+		
+	</div>
+</div>
+
+<div class="section section5">
+	<div class="net-inner inner">
+		<a class="stimg1" href="javascript:void(0)" rel="170,90,90,1150"><img  src="img/5/1.png"> </a>
+		<a class="stimg2" href="javascript:void(0)" rel="950,300,300,1150"><img   src="img/5/2.png"></a>
+		<a class="stimg3" href="javascript:void(0)" rel="130,520,510,1150"><img   src="img/5/3.png"></a>
+		<p class="p1">“德才兼备，以德为本，尚贤用能，绩效为先”，是盈创金融的人才理念。在企业的建设发展中，人才是队伍建设的灵魂，因此盈创建立企业人才任用、奖励和股权激励机制，以更加有效地争夺和留住人才，同时，鼓励引进新的人才，给予具有激励性的奖励。</p>
+		<p class="p2">同时注重人尽其才，发挥每个人的价值。公司主张人才流动化发展，给予每个人充分的发挥空间。尊重员工的创新精神，创造员工个人成功于团队成功之中的企业环境，帮助员工实现设定的目标。让员工与公司共同实现发展。</p>
+		<p class="p3">这个世界不缺人才，缺少的是发掘的能力和任其发挥的平台。因此公司也特别注重人才的开发和培养，通过培训及多样化的集体活动等吸引、凝聚、培养、锻炼人才。力求为集团发展提供人力资源保障，为员工的发展营造良好的环境和 空间。</p>
+	</div>
+</div>
+
+<div class="section section6  ">
+	<div class="inner">
+		</div>
+</div>
+</div>
+
+
+
+<div id="custom-size-dialogBox"></div>
+<div id="custom-size-dialogBox_b"></div>
+<div id="custom-size-dialogBox_c"></div>
+
+
+</body>
+
+<!--
+	作者：yuanhaohoo@163.com
+	时间：2016-03-03
+	描述：弹窗	
+-->
+
+
+
+
+<script src="js/jquery.dialogBox.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	//custom size dialogBox
+	$('#btn-custom-size').click(function(){
+		$('#custom-size-dialogBox').dialogBox({
+			width: 800,
+			height: 466,
+			autoSize: true,
+			title: '盈创金融简介',
+			hasClose: true,
+			content: '<ul><li>盈创金融成立于2015年，是为中国现货投资者提供交易服务的电子交易服务商，提供从投资交易、行情分析、市场咨询、研究支持到决策交易的一站式杠杆交易服务。</li><li>公司主要经营厦门自贸区两岸商品交易中心的交易产品，有自贸油、自贸铜、自贸铝、自贸银等现货交易品种，未来还会上线其他杠杆交易产品。</li><li>公司总部位于深圳市龙华新区中心区，是厦门两岸三地交易中心（福建自贸区综合性大宗商品交易场所）第89号会员。注册资金一亿元人民币。</li></ul><div class="imgs"><img src="img/qiantai.png"/></div>'
+		});
+	})
+	
+	$('#btn-custom-size_b').click(function(){
+		$('#custom-size-dialogBox_b').dialogBox({
+			width: 800,
+			height: 466,
+			autoSize: true,
+			title: '盈创金融理念',
+			hasClose: true,
+			content: '<h2>善创共赢</h2><ul><li>从客户的角度来说，善于利用自己的资源和外在的服务资源，才能创造更多的利益</li><li>从公司角度来说，因为我们是新公司，新公司异味着年轻有活力，善于创新，富有创造力，才能创造更多的企业价值。两者综合而言，就是共赢。</li></ul><div class="imgs"><img src="img/qiantai2.png"/></div>'
+		});
+	})
+	
+	$('#btn-custom-size_c').click(function(){
+		$('#custom-size-dialogBox_c').dialogBox({
+			width: 800,
+			height: 466,
+			autoSize: true,
+			title: '盈创金融优势',
+			hasClose: true,
+			content: '<dl><p>创新引领未来，专注值得信赖</p><dt>1.权威认证,安全保障</dt><dd>经世界权威市场调查机构欧睿国际认证,政府监管，客户资料及资金安全有保障</dd><dt>2.行业前沿分析团队 专业指导</dt><dd>国际资深分析师全天在线指导，行情实时解读 成功率高达90%，更准确把握赚钱机会</dd><dt>3.高杠杆更高收益  </dt><dd>双向买卖收益，买涨买跌均能赚钱，获利机率远远高于50%</dd><dt>4.24小时 贴心服务 </dt><dd>24小时全年无休提供专业客户服务，专人跟进，及时通知</dd><dt>5.在线操作 </dt><dd>简单方便在线开户仅需3分钟，存取迅速风险控制更灵活</dd><dt>6.ISO三项国际标准认证</dt><dd>通过质量、IT服务、信息安全管理三项国际标准认证</dd><dt>7.高新技术企业认定</dt><dd>核心知识产权及科技成果转化能力通过国务院高新技术企业标准认定</dd></dl>'
+		});
+	})
+})
+</script>
+
+</html>

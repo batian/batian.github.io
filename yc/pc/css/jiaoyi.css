@@ -1,0 +1,131 @@
+.big_picbox {height: 350px;background: url(../images/banner.jpg) no-repeat top center;}
+.guide_nav { height: 56px;background: url(../images/bg_01.gif) repeat-x;}
+.guide_nav .nav {
+    width: 1100px;
+   
+    margin: 0px auto;
+    position: relative;
+}
+.guide_nav .nav .name {
+    width: 384px;
+    float: left;
+    height: 22px;
+    padding: 16px 0px;
+    text-align: center;
+}
+.guide_nav .nav ul {
+    width: 716px;
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.guide_nav .nav ul li.m_bg {
+    background: url(../images/span_bg_03.png) no-repeat top center;
+    transform: translateY(-12px);
+    line-height: 70px;
+}
+.guide_nav .nav ul li {
+    width: 179px;
+    height: 68px;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+}
+.guide_nav .nav ul li a {
+    color: #fff;
+}
+.page_nav ul.jyzx{background: url(../images/name.png) no-repeat 5% center;height: 56px;}
+.page_nav ul.jyzx li:nth-of-type(1){margin-left: 380px;}
+
+.guide_box {
+    width: 1098px;
+    border: 1px solid #e6e6e6;
+    margin: 0px auto;
+    padding-bottom: 30px;
+    margin-bottom: 55px;
+    background:#edecec;
+}
+.guide_box .tit {
+    height: 30px;
+    padding: 10px 15px 0px 15px;
+    background: #fff url(../images/line_01.gif) repeat-x bottom;
+}
+.guide_box .ys {
+    padding: 25px 0px 0px 0px;
+    font-size: 14px;
+    color: #333;
+    height: auto;
+    overflow: hidden;
+}
+.guide_box .ys span {
+    width: 1099px;
+    height: 50px;
+    display: block;
+}
+.guide_box .ys .bt1 {
+    background: url(../images/tit1.jpg) no-repeat;
+}
+.guide_box .ys img {
+    float: right;
+    padding: 25px 135px 35px 0px;
+}
+.guide_box .ys p {
+    padding-top: 55px;
+    text-indent: 2em;
+    float: left;
+    width: 500px;
+    padding-left: 55px;
+    line-height: 24px;
+}
+
+.guide_box .ys img.jh {
+    float: left;
+    padding: 25px 0px 35px 135px;
+}
+.guide_box .ys p.jh {
+    padding-top: 55px;
+    text-indent: 2em;
+    float: right;
+    width: 500px;
+    padding-right: 55px;
+    line-height: 24px;
+}
+.guide_box .ys .bt2 {
+    background: url(../images/tit2.jpg) no-repeat;
+}
+.guide_box .ys .bt3 {
+    background: url(../images/tit3.jpg) no-repeat;
+}
+.guide_box .ys .bt4 {
+    background: url(../images/tit4.jpg) no-repeat;
+}
+.guide_box .ys .bt5 {
+    background: url(../images/tit5.jpg) no-repeat;
+}
+.guide_box .ys .bt6 {
+    background: url(../images/tit6.jpg) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

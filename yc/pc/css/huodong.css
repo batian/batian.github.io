@@ -1,0 +1,171 @@
+.big_picbox {
+    background: url(../images/big_pic02.jpg) no-repeat top center;
+    height: 300px;
+}
+.big_picbox .picbox {
+    width: 1100px;
+    height: 300px;
+    margin: 0px auto;
+}
+.page_nav {
+    width: 1100px;
+    height: 40px;
+    margin: 0px auto;
+    line-height: 40px;
+    font-size: 14px;
+   
+}
+.page_nav a {color: #000;}
+.page_nav span {padding: 0px 5px;}
+.page_nav span img{margin-top: 15px;}
+.activity {
+    width: 1098px;
+    border: 1px solid #e6e6e6;
+    background: url(../images/bg_pic.gif);
+    margin: 0px auto;
+    padding-bottom: 40px;
+}
+.cleara {
+    height: 0px;
+    line-height: 0px;
+    font-size: 0px;
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+.activity ul {
+    padding: 0px 120px 0px 50px;
+}
+.activity ul li {
+    padding: 50px 0px;
+    height: 252px;
+    background: url(../images/line_01.png) no-repeat bottom center;
+}
+.activity ul li .pic {
+    float: left;
+}
+.activity ul li .nr {
+    width: 230px;
+    float: right;
+}
+.activity ul li .name {
+    font-size: 24px;
+    height: 35px;
+    overflow: hidden;
+}
+.activity ul li .name a {
+    color: #000;
+}
+.activity ul li .xx_01 {
+    
+    padding: 5px 0px;
+}
+.activity ul li .xx_01 span {
+    display: block;
+    line-height: 24px;
+    color: #333;
+}
+.activity ul li .xx_01 i {
+    color: #fa3a3a;
+    font-size: 16px;
+    font-style: initial;
+}
+.activity ul li .xx_01 b {
+    color: #fa3a3a;
+    font-size: 16px;
+    font-weight: normal;
+}
+.activity ul li .p_box {
+    height: 60px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0px 20px 0px;
+    overflow: hidden;
+}
+.activity ul li .btn_box {
+    text-align: left;
+    height: 37px;
+}
+.activity ul li.four {
+    background: none;
+}
+.fenye_f {
+    height: 26px;
+}
+.fanye{width: 1100px;margin: 0 auto;padding-top: 20px;}
+.fanye_box{margin-left: 150px;}
+
+.fenye_box {
+    height: 26px;
+    line-height: 26px;
+    float: left;
+}
+.fenye_box span {
+    padding: 0px 10px;
+    display: block;
+    float: left;
+    color: #333;
+    border-radius: 3px;
+}
+.fenye_box span.disabled {
+    color: #666;
+}
+.fenye_box span.sp_current {
+    color: #fff;
+    background: #e87400;
+    margin: 0px 5px;
+}
+.fenye_box a {
+    color: #333;
+    padding: 0px 10px;
+    display: block;
+    background: #f0f0f0;
+    float: left;
+    margin: 0px 5px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+
+.picbg{height: 556px;background: url(../images/banner2.jpg) no-repeat top center;}
+.picbg .box{width: 1100px;margin: 0 auto;height: auto;overflow: hidden;}
+.picbg .box .box_left {
+    width: 595px;
+    padding-top: 75px;
+    float: right;
+    color: #fff;
+    position: relative;
+    height: 450px;
+}
+.picbg .box .box_left .an {
+    width: 220px;
+    height: 56px;
+    position: absolute;
+    top: 395px;
+    left: 25px;
+}
+.picbg .box .box_left h1 {
+    font-size: 37px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top:80px ;
+}
+.picbg .box .box_left .sm {
+    text-align: right;
+    display: block;
+    text-decoration: underline;
+    position: absolute;
+    top: 158px;
+    right: 40px;
+}
+.picbg .box a {
+    color: #fff;
+}
+.picbg .box .box_left p {
+    text-indent: 2em;
+    font-size: 13px;
+    width: 560px;
+}
+.con2 {
+    width: 100%;
+    height: 556px;
+    background: url(../images/dsh.jpg) top center no-repeat;}
+.con2 .box {
+    width: 1055px;
+    margin: 0px auto;
+    padding-top: 350px;
+    padding-left: 45px;
+}
+.down_main {
+    width: 1100px;
+    margin: 0px auto;
+    background: url(../images/bg_pic.gif);
+    margin-top: 30px;
+    
+}
+
+.down_main > img{margin-top: 40px;transform: translateX(-10px);}
+.down_main ul{padding-top: 33px;}
+.down_main ul li{float: left;width: 340px;height: 160px;background: #fff;border: 1px solid #acdffe;margin: 0px 10px;}
+.down_main ul li > img{width: 90px;height: 130px;overflow: hidden;float: left;margin: 15px ;}
+.down_main ul li .down_right{float: left;width: 200px;margin-top: 20px;}
+.down_main ul li .down_right h2{font-size: 16px;color: #323232;padding-bottom: 11px;border-bottom: 1px dashed #ccc;}
+.down_main ul li .down_right p{font-size: 14px;color: #646464;margin-top: 11px;}
+.down_main ul li .down_right img{margin-top: 6px;}
+
+.down_main .ewm{margin-top: 60px;}
+.down_main .ewm img{margin:0 auto;display: block;}
+.down_main .ewm > p{width: 330px;display: block;margin: 0 auto;text-align: center;font-size: 14px;color: #009EFF;padding-top: 20px;}
+
+.down_main .down_bot{margin-left: 140px;margin-top: 50px;padding-bottom: 30px;}
+.down_main .down_bot .red{color: #fc6b6b;font-size: 16px;}
+.down_main .down_bot p{font-size: 14px;line-height: 21px;color: #323232;}
+
+
+
+
+
+
+
+
