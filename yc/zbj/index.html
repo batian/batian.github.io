@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>直播间</title>
+	</head>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/liaotian.css"/>
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/index.js" type="text/javascript"></script>
+		<script src="js/kechengbiao.js" type="text/javascript"></script>
+	<body >
+		<div class="top">
+			<div class="top_logo">
+				<a href="#" class="logo left">
+					<img src="img/top/logo.png" alt="" />
+					<img src="img/top/logo_title.png" alt="" />
+				</a>
+				<ul class="left">
+					<li><a href="#">收藏到桌面</a></li>
+					<li><a href="#">加入实盘</a></li>
+				</ul>
+			</div>
+			<div class="top_zc">
+				<div class="name2"><p>游客9527</p></div>
+				<ul>
+					<li><a href="#">登陆</a></li>
+					<li><a href="#">注册</a></li>
+				</ul>
+				<a href="#">立即开户</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="content_l left">
+				<div class="kechengbiao box_a box">
+					<div class="kcb_title">
+						<p>课程表</p>
+					</div>
+					<div id="iftest" class="mCustomScrollbar"  data-mcs-theme="minimal">
+						<div class="lts_left1 clear">
+							<div class="days">
+								<div class="days-title">
+									<ul>
+
+										<li class="over" id="days-title1">
+											<span class="days-ween">星期一</span>
+											<span class="days-n">9</span>
+											<span class="days-nb">5月</span>
+										</li>
+										<li class="" id="days-title2">
+											<span class="days-ween">星期二</span>
+											<span class="days-n">10</span>
+											<span class="days-nb">5月</span>
+										</li>
+										<li class="" id="days-title3">
+											<span class="days-ween">星期三</span>
+											<span class="days-n">11</span>
+											<span class="days-nb">5月</span>
+										</li>
+										<li id="days-title4">
+											<span class="days-ween">星期四</span>
+											<span class="days-n">12</span>
+											<span class="days-nb">5月</span>
+										</li>
+										<li id="days-title5">
+											<span class="days-ween">星期五</span>
+											<span class="days-n">13</span>
+											<span class="days-nb">5月</span>
+										</li>
+										<li id="days-title6">
+											<span class="days-ween">星期六</span>
+											<span class="days-n">14</span>
+											<span class="days-nb">5月</span>
+										</li>
+									</ul>
+								</div>
+
+								<div class="news_box" id="days-title_1" style="">
+									<ul>
+										<li><a href="#">09:00-11:30 <span>《第一交易》</span> <br>嘉宾老师：余教授 主持：CC</a></li>
+										<li><a href="#">11:40-12:50 <span>《股市午间道》</span>  <br>嘉宾老师：杨老师  主持：Ada</a></li>
+										<li><a href="#">13:00-15:00 <span>《期巧板》</span> <br>嘉宾老师：余教授 主持：果果</a></li>
+										<li><a href="#">15:10-16:50 <span>《九才论股》</span> <br> 嘉宾老师：杨老师 主持：凡凡</a></li>
+										<li><a href="#">17:00-18:50 <span>《久财说》</span> <br> 主持人</a></li>
+										<li><a href="#">19:00-20:50 <span>《盘前36计》</span> <br>嘉宾老师：柯老师 主持：果果	</a></li>
+									</ul>
+								</div>
+								<div class="news_box" id="days-title_2" style="display:none;">
+									<ul>
+										<li><a href="#">09:00-11:30 <span>《第一交易》</span> <br>嘉宾老师：柯老师 主持：Ada</a></li>
+										<li><a href="#">11:40-12:50 <span>《股市午间道》</span>  <br>嘉宾老师：储老师  主持：凡凡</a></li>
+										<li><a href="#">13:00-15:00 <span>《期巧板》</span> <br>嘉宾老师：柯老师 主持：果果</a></li>
+										<li><a href="#">15:10-16:50 <span>《九才论股》</span> <br> 嘉宾老师：余教授 主持：Ada</a></li>
+										<li><a href="#">17:00-18:50 <span>《九度学前班》</span> <br> 嘉宾老师：杨老师 主持：CC</a></li>
+										<li><a href="#">19:00-20:50 <span>《盘前36计》</span> <br>嘉宾老师：余教授 主持：果果	</a></li>
+									</ul>
+								</div>
+								<div class="news_box" id="days-title_3" style="display:none;">
+									<ul>
+										<li><a href="#">09:00-11:30 <span>《第一交易》</span> <br>嘉宾老师：杨老师 主持：凡凡</a></li>
+										<li><a href="#">11:40-12:50 <span>《股市午间道》</span>  <br>嘉宾老师：储老师  主持：CC</a></li>
+										<li><a href="#">13:00-15:00 <span>《期巧板》</span> <br>嘉宾老师：杨老师 主持：KK</a></li>
+										<li><a href="#">15:10-16:50 <span>《九才论股》</span> <br> 嘉宾老师：储老师 主持：凡凡</a></li>
+										<li><a href="#">17:00-18:50 <span>《久财说》</span> <br> 嘉宾老师：柯老师 主持：Ada</a></li>
+										<li><a href="#">19:00-20:50 <span>《盘前36计》</span> <br>嘉宾老师：余教授 主持：KK	</a></li>
+									</ul>
+								</div>
+								<div class="news_box" id="days-title_4" style="display:none;">
+									<ul>
+										<li><a href="#">09:00-11:30 <span>《第一交易》</span> <br>嘉宾老师：储老师 主持：KK</a></li>
+										<li><a href="#">11:40-12:50 <span>《股市午间道》</span>  <br>嘉宾老师：余教授  主持：CC</a></li>
+										<li><a href="#">13:00-15:00 <span>《期巧板》</span> <br>嘉宾老师：储老师 主持：果果</a></li>
+										<li><a href="#">15:10-16:50 <span>《九才论股》</span> <br> 嘉宾老师：柯老师 主持：KK</a></li>
+										<li><a href="#">17:00-18:50 <span>《九度学前班》</span> <br> 嘉宾老师：杨老师 主持：果果</a></li>
+										<li><a href="#">19:00-20:50 <span>《盘前36计》</span> <br>嘉宾老师：柯老师 主持：凡凡	</a></li>
+									</ul>
+								</div>
+								<div class="news_box" id="days-title_5" style="display:none;">
+									<ul>
+										<li><a href="#">09:00-11:30 <span>《第一交易》</span> <br>嘉宾老师：杨老师 主持：果果</a></li>
+										<li><a href="#">11:40-12:50 <span>《股市午间道》</span>  <br>嘉宾老师：柯老师  主持：CC</a></li>
+										<li><a href="#">13:00-15:00 <span>《期巧板》</span> <br>嘉宾老师：储老师 主持：凡凡</a></li>
+										<li><a href="#">15:10-16:50 <span>《九才论股》</span> <br> 嘉宾老师：柯老师 主持：KK</a></li>
+										<li><a href="#">17:00-18:50 <span>《九度学堂》</span> <br> 嘉宾老师：储老师 </a></li>
+										<li><a href="#">19:00-20:50 <span>《盘前36计》</span> <br>嘉宾老师：杨老师 主持：KK	</a></li>
+									</ul>
+								</div>
+								<div class="news_box" id="days-title_6" style="display:none;">
+									<ul>
+										<li><a href="#">09:00-11:30 <span>《第一交易》</span> <br>嘉宾老师：杨老师 主持：果果</a></li>
+										<li><a href="#">11:40-12:50 <span>《股市午间道》</span>  <br>嘉宾老师：柯老师  主持：CC</a></li>
+										<li><a href="#">13:00-15:00 <span>《期巧板》</span> <br>嘉宾老师：储老师 主持：凡凡</a></li>
+										<li><a href="#">15:10-16:50 <span>《九才论股》</span> <br> 嘉宾老师：柯老师 主持：KK</a></li>
+										<li><a href="#">17:00-18:50 <span>《九度学堂》</span> <br> 嘉宾老师：储老师 </a></li>
+										<li><a href="#">19:00-20:50 <span>《盘前36计》</span> <br>嘉宾老师：杨老师 主持：KK	</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="kcb_logo">
+						<p>关注我们</p>
+						<img src="img/cont/ewm.png" alt="">
+					</div>
+				</div>
+				<div class="shiping right">
+					<div class="sp_title">
+						<span>直播视频<a href="#">刷新视频</a></span>
+						<span class="right"> <span class="red">咨询热线：</span>400-8848648</span>
+					</div>
+					<embed class="sp" type="application/x-shockwave-flash" wmode="transparent" allowfullscreen="true" allowscriptaccess="never" quality="high" src="http://yy.com/s/35506268/2521408176/yyscene.swf"  align="middle" width="100%">
+					<div class="bott_icon clear">
+						<ul>
+							<li><a href="#">专家团队</a></li>
+							<li><a href="#">精彩课程</a></li>
+							<li><a href="#">研究中心</a></li>
+							<li><a href="#">VIP课件</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content_r right">
+				<div class="liaotian left">
+					<div class="gonggao clear">
+						<span class="left">公告</span>
+						<marquee direction="left"  class="huang right">分析师所发表的言论仅代表其个人对市场所持观点，投资者</marquee >
+						<div class="vipkc">VIP课程</div>
+					</div>
+					<div class="liaotiankuang">
+						<!--聊天框开始-->
+	   <div class="chat_box_main">
+		   <div id="msgbox1" class="lts_right mCustomScrollbar"  data-mcs-theme="minimal" style="padding-right:15px;">
+			   <ul style="width:100%;padding-left:15px;padding-top:20px;padding-right:15px; ">
+			   	<li class="lts_right3">
+					<span class="time">16:29</span>
+					<img src="img/liaotian/User1.png" title="平民" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick(this)">掌上浮云</a>
+					<span class="to_m">对</span>
+					<img src="img/liaotian/Vip2.png" title="大校" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick1(this)">静悄悄</a>
+					<span class="to_m">游客朋友，开通会员过后老师会优先回答会员朋友的问题，也会让老师记住你会员名字下次认得出你来哦</span>
+				</li>
+				<li class="lts_right3">
+					<span class="time">16:29</span>
+					<img src="img/liaotian/User1.png" title="平民" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick(this)">掌上浮云</a>
+					<span class="to_m">对</span>
+					<img src="img/liaotian/Vip2.png" title="大校" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick1(this)">静悄悄</a>
+					<span class="to_m">你好</span>
+				</li>
+				<li class="lts_right3">
+					<span class="time">16:29</span>
+					<img src="img/liaotian/User1.png" title="平民" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick(this)">掌上浮云</a>
+					<span class="to_m">对</span>
+					<img src="img/liaotian/Vip2.png" title="大校" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick1(this)">静悄悄</a>
+					<span class="to_m">你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</span>
+				</li>
+				<li class="lts_right3">
+					<span class="time">16:29</span>
+					<img src="img/liaotian/User1.png" title="平民" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick(this)">掌上浮云</a>
+					<span class="to_m">对</span>
+					<img src="img/liaotian/Vip2.png" title="大校" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick1(this)">静悄悄</a>
+					<span class="to_m">你好</span>
+				</li>
+				<li class="lts_right3">
+					<span class="time">16:29</span>
+					<img src="img/liaotian/User1.png" title="平民" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick(this)">掌上浮云</a>
+					<span class="to_m">对</span>
+					<img src="img/liaotian/Vip2.png" title="大校" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick1(this)">静悄悄</a>
+					<span class="to_m">游客朋友，开通会员过后老师会优先回答会员朋友的问题，也会让老师记住你会员名字下次认得出你来哦</span>
+				</li>
+				<li class="lts_right3">
+					<span class="time">16:29</span>
+					<img src="img/liaotian/User1.png" title="平民" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick(this)">掌上浮云</a>
+					<span class="to_m">对</span>
+					<img src="img/liaotian/Vip2.png" title="大校" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick1(this)">静悄悄</a>
+					<span class="to_m">游客朋友，开通会员过后老师会优先回答会员朋友的问题，也会让老师记住你会员名字下次认得出你来哦</span>
+				</li>
+				<li class="lts_right3">
+					<span class="time">16:29</span>
+					<img src="img/liaotian/User1.png" title="平民" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick(this)">掌上浮云</a>
+					<span class="to_m">对</span>
+					<img src="img/liaotian/Vip2.png" title="大校" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick1(this)">静悄悄</a>
+					<span class="to_m">游客朋友，开通会员过后老师会优先回答会员朋友的问题，也会让老师记住你会员名字下次认得出你来哦</span>
+				</li>
+				<li class="lts_right3">
+					<span class="time">16:29</span>
+					<img src="img/liaotian/User1.png" title="平民" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick(this)">掌上浮云</a>
+					<span class="to_m">对</span>
+					<img src="img/liaotian/Vip2.png" title="大校" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick1(this)">静悄悄</a>
+					<span class="to_m">游客朋友，开通会员过后老师会优先回答会员朋友的问题，也会让老师记住你会员名字下次认得出你来哦</span>
+				</li>
+				<li class="lts_right3">
+					<span class="time">16:29</span>
+					<img src="img/liaotian/User1.png" title="平民" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick(this)">掌上浮云</a>
+					<span class="to_m">对</span>
+					<img src="img/liaotian/Vip2.png" title="大校" class="RoomUserRole">
+					<a class="name" href="javascript:void(0)" onclick="LinkLayerClick1(this)">静悄悄</a>
+					<span class="to_m">游客朋友，开通会员过后老师会优先回答会员朋友的问题，也会让老师记住你会员名字下次认得出你来哦</span>
+				</li>
+			   </ul>
+		   </div>
+			<ul class="zxkf">
+				<li style="margin-left:0"><a href="#">咨询客服</a></li>
+				<li><a href="#">咨询客服</a></li>
+				<li><a href="#">咨询客服</a></li>
+				<li><a href="#">咨询客服</a></li>
+			</ul>
+
+		   <div class="lts_right1">
+			   <div class="send-chat">
+				   <div class="tabs block-title" style="margin-bottom:4px;">
+					   <div class="text-gift">
+						   <select name="flower" id="flower" class="three">
+							   <option value="1">一个赞</option>
+							   <option value="3">三个赞</option>
+							   <option value="5" selected="selected">五个赞</option>
+						   </select>
+					   </div>
+					   <div class="text-gift">送给</div>
+					   <div class="text-gift">
+						   <select name="teacher" id="teacher" class="three">
+							   <option value="" selected="selected">-</option>
+							   <option value="徐老师">--徐老师--</option>
+							   <option value="储老师">--储老师--</option>
+							   <option value="余老师">--余老师--</option>
+							   <option value="杨老师">--杨老师--</option>
+							   <option value="柯老师">--柯老师--</option>
+							   <option value="CC">--CC--</option>
+							   <option value="KK">--KK--</option>
+							   <option value="果果">--果果--</option>
+							   <option value="Ada">--Ada--</option>
+							   <option value="凡凡">--凡凡--</option>
+						   </select>
+					   </div>
+					   <div class="text-gift">
+						   <input type="button" value="送出" id="songchu" class="button" name="songchu"/>
+					   </div>
+				   </div>
+				   <div class="tabs block-title">
+					    <div id="conner" class="other-btn-wrap">
+						   <div id="msgTo" class="lts_chat5">所有人</div>
+						   <!-- <div id="pfqh" class="lts_chat05"><a href="/function/bglist.html" id="hfbutton" target="_blank">换肤</a></div>-->
+						   <div class="lts_gd" id="scroll"><a onclick="Scroll(this);" href="javascript:void(0)">滚动</a></div>
+						   <!-- <div class="lts_chat2"><a onclick="clearmessage();" href="javascript:void(0)">清屏</a></div>-->
+						   <div class="lts_chat_face"><a class="emotion" href="javascript:void(0)">表情</a></div>
+					    </div>
+
+					    <div class="lts_chat_tzbd" style=" background:#02C9EF;">
+							<input name="yxhd" id="yxhd" value="yx" type="checkbox">优先回答
+						</div>
+
+				   </div>
+				   <div class="tab-content">
+					   <div id="sent-chat-container" class="item">
+						   <div class="input-box">
+							   <div id="editor" class="message-editor">
+								   <input id="saytext" name="saytext" style="border: none; margin: 0px; height: 45px; outline: none; width: 100%; font-size:18px;font-weight:bold" />
+							   </div>
+							   <div class="input-botton" id="btnSendMsg"> </div>
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+		   </div>
+	   </div>
+
+	   <!--聊天框END-->
+					</div>
+				</div>
+				<div class="vip right" style="display:none">
+
+					<ul>
+						<li>
+							<h3>《K线交易法则》</h3>
+							<p>讲课时间：周三9:00-11:00</p>
+							<p>主讲老师：喻老师</p>
+							<p>课程内容：投资者必看</p>
+						</li>
+						<li>
+							<h3>《K线交易法则》</h3>
+							<p>讲课时间：周三9:00-11:00</p>
+							<p>主讲老师：喻老师</p>
+							<p>课程内容：投资者必看</p>
+						</li>
+						<li>
+							<h3>《K线交易法则》</h3>
+							<p>讲课时间：周三9:00-11:00</p>
+							<p>主讲老师：喻老师</p>
+							<p>课程内容：投资者必看</p>
+						</li>
+						<li>
+							<h3>《K线交易法则》</h3>
+							<p>讲课时间：周三9:00-11:00</p>
+							<p>主讲老师：喻老师</p>
+							<p>课程内容：投资者必看</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container2 clear">
+		<div class="content_l left tmbj">
+			<div class="main_news_list">
+			<div class="main_news_title">
+				<ul>
+					<li id="main_news3" class="over">财经日历</li>
+				</ul>
+			</div>
+			<div style="" class="main_news_text" id="main_news_3">
+				<ul id="cjData" class="mCustomScrollbar"  data-mcs-theme="minimal">
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+					<li>
+						<div class="title-t"><span class="title">07:01</span>
+							<span class="title-l" data-value="1">
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+								<div class="icon star"></div>
+							</span>
+						</div>
+						<div class="title-m">
+							<span class="title">
+								<img src="img/guo/chinese.png" title="英国" height="28" width="35"></span>
+								<span class="title-l">4月BRC同店销售同比</span>
+						</div>
+						<div class="title-b">
+							<span class="title">前值</span>
+							<span class="title">预测</span>
+							<span class="title">今值</span>
+						</div>
+						<div class="title-b">
+							<span class="title cr_y">-0.9%</span>
+							<span class="title cr_y">0.5%</span>
+							 <span class="title cr_y">-0.7%</span>
+						</div>
+					</li>
+			</div>
+			<div class="btn_top"></div>
+			<div class="btn_bottom"></div>
+		</div>
+		</div>
+		<div class="content_r right tmbj">
+			<div class="zhubo_box">
+				<ul class="zhubo mCustomScrollbar"   data-mcs-theme="minimal">
+				<li>
+					<div class="imgs left">
+						<img src="img/ren/5.jpg" alt="">
+					</div>
+					<div class="text left">
+						<h3>高级分析师：于老师</h3>
+						<p>主攻领域：有色金属，股指，期货</p>
+						<p>交易法则：快准狠</p>
+						<a href="#">预约专家</a>
+					</div>
+				</li>
+				<li>
+					<div class="imgs left">
+						<img src="img/ren/5.jpg" alt="">
+					</div>
+					<div class="text left">
+						<h3>高级分析师：于老师</h3>
+						<p>主攻领域：有色金属，股指，期货</p>
+						<p>交易法则：快准狠</p>
+						<a href="#">预约专家</a>
+					</div>
+				</li>
+				<li>
+					<div class="imgs left">
+						<img src="img/ren/5.jpg" alt="">
+					</div>
+					<div class="text left">
+						<h3>高级分析师：于老师</h3>
+						<p>主攻领域：有色金属，股指，期货</p>
+						<p>交易法则：快准狠</p>
+						<a href="#">预约专家</a>
+					</div>
+				</li>
+				<li>
+					<div class="imgs left">
+						<img src="img/ren/5.jpg" alt="">
+					</div>
+					<div class="text left">
+						<h3>高级分析师：于老师</h3>
+						<p>主攻领域：有色金属，股指，期货</p>
+						<p>交易法则：快准狠</p>
+						<a href="#">预约专家</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div class="banner3 tmbj clear">
+		<ul>
+			<li>
+				<a href="#"><img src="img/banner/banner1.png" alt=""></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/banner/banner2.png" alt=""></a>
+			</li>
+		</ul>
+	</div>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script>
+		(function($){
+			$(window).load(function(){
+
+				$("body").mCustomScrollbar({
+					theme:"minimal"
+				});
+
+			});
+		})(jQuery);
+	</script>
+	<script type="text/javascript">
+	$(function(){
+		$(window).load(function(){
+			$('#msgbox1').mCustomScrollbar('scrollTo','bottom');
+		});
+		$('#btnSendMsg').click(function(){
+			$('#msgbox1').mCustomScrollbar('scrollTo','bottom');
+		})
+
+	})
+	</script>
+	</body>
+</html>
