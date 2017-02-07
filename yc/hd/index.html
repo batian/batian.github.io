@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta width="device-width," name="viewport" content=" initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>2016不容错过赚钱品种_手机版</title>
+<link  type="text/css" href="css/_style.css"  rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/idangerous.swiper-2.1.min.js" ></script>
+<script type="text/javascript">
+  /*监听动画是否执行完*/
+   $(function(){
+	    /*滚屏事件*/
+		      function gundongNum(){
+			   var tt=document.getElementById('lanpic');
+			   var dd=document.getElementById('hongpic');
+			   tt.addEventListener("webkitAnimationEnd",function(){
+		     	 /*开始先执行滚动数字*/
+				$("#two-num1").show();
+				$("#two-num2").show();
+			    $("#two-num1").find(".one,.two,.three,.four,.five").hide().eq(0).show();
+				$("#two-num2").find(".one,.two,.three,.four,.five").hide().eq(0).show();
+                rollNumber(14950,$("#two-num1"),598); //14950*/
+				rollNumber(26833,$("#two-num2"),Math.floor(598*1.3)); // 26833
+			    /*开始执行滚动数字完毕*/
+				   })
+		       }
+		      gundongNum();
+			  $(".bg-one-box").addClass("animateb0");
+		 var mySwiper = new Swiper('.swiper-container',{
+			mode: 'vertical',
+			onTouchStart:function(){
+				
+			},
+		    onSlideChangeEnd:function(){
+				$("#next-icon").css("display","block");
+				$(".bg-one-box").removeClass("animateb0");
+				$(".bg-two-box").removeClass("animateb1");
+				$(".bg-three-box").removeClass("animateb2");
+				$(".bg-four-box").removeClass("animateb3");
+                
+				if(mySwiper.activeIndex == 0){
+					$(".bg-one-box").addClass("animateb0");
+					$("#next-icon").show();
+					gundongNum();
+			
+				} else if(mySwiper.activeIndex == 1){
+				    $(".bg-two-box").addClass("animateb1");
+					$("#next-icon").show();
+					$("#two-num1").hide();
+				    $("#two-num2").hide();  
+				
+				} else if(mySwiper.activeIndex== 2){
+					$(".bg-three-box").addClass("animateb2");
+					$("#next-icon").show();
+					$("#two-num1").hide();
+				    $("#two-num2").hide();
+				}else if(mySwiper.activeIndex == 3){
+					$(".bg-four-box").addClass("animateb3");
+					$("#next-icon").hide();
+					$("#two-num1").hide();
+				    $("#two-num2").hide();
+				}
+			}	
+	   })
+	   /*弹窗*/
+	   $(".btn").click(function(){
+		  $(".popup-box").show();
+		  $("#mask").show();
+		   })
+	   $("#mask").click(function(){
+			$(".popup-box").hide();
+			$("#mask").hide();	
+		})	
+   })
+function rollNumber(endNum,parent,speed){
+		var num = 0;
+		var stringNum = '';
+		var one = parent.find(".one");
+		var tow = parent.find(".two");
+		var three = parent.find(".three");
+		var four = parent.find(".four");
+		var five = parent.find(".five");
+		clearInterval(parent.timer);
+		parent.timer = setInterval(function(){
+			num+=speed;
+			stringNum = num.toString();
+			
+			if(num>=endNum){
+				num = endNum;
+				stringNum = num.toString();
+				clearInterval(parent.timer);
+			}
+			
+			parent.html(num+"<span>元</span>");
+
+		},1000/20)	
+	}	
+
+
+</script>
+</head>
+
+<body>
+<div class="swiper-container">
+		  <div class="swiper-wrapper" style="overflow:hidden;">
+		  	
+				   <div class="swiper-slide bg-one-box">
+						     <img src="images/one_01.png" />
+						     <img src="images/one_02.png" /> 
+						  
+						     <div class="gundong">
+						        <div class="lanzi">
+						          <img src="images/one_lanzi.png"  id="lanpic">
+						          <div class="two-num" id="two-num1">         
+						          </div> 
+						        </div>
+						        <img src="images/one_pk.png" >
+						        <div class="hongzi">
+						          <img src="images/one_hongzi.png"  id="hongpic">
+						          <div class="two-num" id="two-num2">        
+						          </div>  
+						        </div>
+						     </div>   
+						      
+						   
+						      <p  class="one_zs">体验赚钱快感 </p>
+						      <img src="images/one_btn.png"  class="one_btn btn">
+						  
+				   </div>
+				   <div class="swiper-slide bg-two-box">
+				      <div class="img-title">
+				        <img src="images/two_01.png" /> 
+				      </div>
+				      <div class="two-box animates">
+				          <div class="two-box1">
+				              <img src="images/two_z01.png"   class="a1"/>
+				              <img src="images/twoy_01.png"  class="a1"/>
+				          </div>
+				          <div class="clear"></div>
+				          <div class="two-box2">
+				              <img src="images/twoz_02.png"  class="a1"/>
+				              <img src="images/twoy_02.png"  class="a1"/>
+				          </div>
+				      </div>
+				          <div class="clear"></div>
+				          <img src="images/one_btn.png"   class="two_btn btn"/>
+				  
+				   </div>
+				   <div class="swiper-slide bg-three-box">
+				      <img src="images/three_01.png"  class="three01_img">
+				      <img src="images/three02.png"  class="three02_img">
+				      <img src="images/three03.png"  class="three03_img">
+				      <img src="images/three04.png"  class="three04_img">
+				      
+				      <div class="three_box">
+				      <img src="images/three05.png" >
+				      <div class="three_nr">
+				        <div class="wenhao"><img src="images/three_wenhao.png"  /></div>
+				        <div class="wenzi"><img src="images/three_wenzi.png"  /></div>
+				      </div>
+				      <div class="clear"></div>
+				      </div>
+				      <div class="three_btn"><img src="images/three_btn.png"  class="btn"/></div>
+				   </div>  
+				   <div class="swiper-slide bg-four-box">
+				      <img src="images/four_01.png" />
+				      <img src="images/four_02.png" />
+				      <img src="images/four_btn.png"  class="btn"/> 
+				   </div>
+				    
+
+ </div>
+</div>
+<!--跳跳-->
+ <div id="next-icon">
+    <img src="images/tiao.png"  class="tiao"> 
+ </div>
+<!--跳跳完毕-->
+
+ <style type="text/css">
+ /*弹窗*/
+.popup-box{width:95.4%;position:absolute;left:2.3%;top:20%;z-index:99999;display:none;}
+.popup-box .top{width:100%;background:#dd3546; border-left-top-radius:4px;border-right-top-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;}
+.popup-box .top p{text-align:center;font-size:22px; font-family:"微软雅黑";color:#fff;padding:4% 0;}
+.popup-box .top img{width:11.2%;display:block;margin:0 auto;padding-top:4%;}
+.popup-box .bottom{width:100%;background:#fff;border-bottom-left-radius:4px;border-bottom-right-radius:4px;padding-top:25px;padding-bottom:14px;padding-left: 10%;padding-right: 10%;box-sizing: border-box;}
+/*.popup-box .bottom input{border:1px #dd3546 solid; border-radius:8px;width:76%;margin:0 auto; text-align:center;color:#686868;display:block;font-size:20px;padding:0.65rem 0;}
+*/.popup-box .popup-btn{width:70%;margin:0 auto;margin-top:16px;}
+#mask{width:100%;height:100%;position:fixed;z-index:99;background:#000;opacity:0.7;top:0;left:0;display:none;}
+	
+ </style>
+<!--弹窗-->
+<div class="popup-box">
+ 	<div class="top">
+    	<img src="images/tan1.png"   class="tu1"/>
+        <p>领取10万体验金，马上赚钱</p>
+    </div> 
+    <div class="bottom">
+    	<form action="/member/sms_demo_xintouzi.php" method="post">
+				        <!--<input name="username" class="username" id="username" placeholder="姓名" type="text">-->
+				        <input name="phone" id="phone" class="phone" value="请输入您的手机号码" type="text" onfocus="if(value=='请输入您的手机号码'){value=''}" onblur="if(value==''){value='请输入您的手机号码'}">
+				        <input name="yzm" id="yzm" class="yzm" value="请输入验证码" type="text" onfocus="if(value=='请输入验证码'){value=''}" onblur="if(value==''){value='请输入验证码'}">
+				        <input name="hiddenyzm" id="yzm2" value="" type="hidden">
+				        <input name="fs" id="fs" class="fs" value="获取" onclick="getCode1(this)" type="button">
+				        <button type="submit" ></button>
+				    </form>
+<!--    	<input type="tel"  value="请输入您的手机号码" maxlength="11"  onfocus="if(value=='请输入您的手机号码'){value=''}" onblur="if(value==''){value='请输入您的手机号码'}"/>
+-->    	<!--<img src="images/mslq.png"  class="popup-btn"/>-->
+    </div>
+</div> 
+<div id="mask"></div>
+<!--弹窗结束-->
+
+
+</body>
+</html>
