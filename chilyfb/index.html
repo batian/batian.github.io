@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>webpack-gulp-react</title>
+
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/static/css/font-awesome.css">
+    <link rel="stylesheet" href="./dist/static/css/jquery-accordion-menu.css">
+    <link rel="stylesheet" href="./dist/static/css/main.css">
+    <!--<link rel="stylesheet" href="./dist/sass/main.css">-->
+    <link rel="stylesheet" href="./dist/static/css/dataTables.bootstrap.css">
+
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="app"></div>
+
+<script src="./dist/jsx/main.bundle.js"></script>
+<script src="./dist/static/js/all.js"></script>
+
+<script src="http://cdn.datatables.net/1.10-dev/js/jquery.dataTables.min.js"></script>
+<script src="http://cdn.datatables.net/plug-ins/28e7751dbec/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+<script>
+    $(function () {
+        jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
+        $("html").niceScroll({cursorcolor:"rgba(0,0,0,0.3)"});
+        $(".menu").niceScroll({cursorcolor:"rgba(0,0,0,0)"});
+    })
+
+</script>
+
+</body>
+</html>

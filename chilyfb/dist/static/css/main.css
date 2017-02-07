@@ -1,0 +1,132 @@
+body{
+	background: #ddd;
+}
+.jquery-accordion-menu {
+	box-shadow: 0px 0px 0px #fff;
+}
+.menu {
+	position: fixed;
+	background: #ED5565;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 18%;
+}
+.menu .photo{
+	height: 270px;
+	text-align: center;
+	background: url(../../img/bj.jpg) 90% 80%; 
+	background-size: 510px;
+	position: relative;
+}
+.menu .photo .img{
+	margin-top: 60px;
+	width: 140px;
+	height: 140px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 7px solid #da4453;
+	display: inline-block;
+	box-shadow: 0px 3px 12px rgba(0,0,0,0.7)
+}
+.menu .photo p{
+	height: 50px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+	font-size: 22px;
+	bottom: 0px;
+	margin: 0px;
+	background: rgba(0,0,0,0.5);
+}
+.menu .photo .img img{
+	width: 100%;
+	height: 100%;
+}
+
+.main{
+	position: relative;
+	left: 18%;
+	top: 0px;
+	width: 82%;
+
+}
+
+.main .top_bar{
+	height: 50px;
+    width: 82%;
+    position: fixed;
+    top: 0px;
+    background: #383838;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+.main .lists{
+	padding: 80px 30px 30px
+}
+.main .lists ul.index{
+	padding: 0px;
+}
+.main .lists ul.index li{
+	background: #fff;
+	list-style: none;
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+	padding: 10px 30px 20px;
+	cursor: pointer;
+	border-left: 5px solid #666;
+	transition:all 0.3s;
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+.main .lists ul.index li:hover{
+	border-left: 5px solid #ed5565;
+	
+}
+.main .lists ul.index li a{
+	text-decoration: none;
+	color: #666;
+}
+.main .lists ul.index li a .more{
+	display: inline-block;
+	margin-top: 5px;
+	padding: 6px 24px;
+	background: #ed5565;
+	color: #fff;
+	border-radius: 5px;
+}
+.main .lists ul.index li a .icon{
+	font-size: 12px;
+	margin:0 0 10px 0px;
+}
+.main .lists ul.index li a .icon span{
+	padding: 0 8px 0 3px;
+}
+
+.change_page{
+	text-align: right;
+	padding: 0 30px;
+}
+.change_page span{
+	cursor: pointer;
+	background: #ed5565;
+	padding: 6px 14px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.table_search{
+	background: #fff;
+	min-height: 500px;
+	padding: 20px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.3)
+}
+
+#example_wrapper{
+	margin-top: 18px;
+}
+#example_filter label{
+	display: none !important;
+}
+
+/*jock*/
