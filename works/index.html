@@ -1,0 +1,270 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>那些走过的日子</title>
+  <meta name="description" content="An very basic example of how to use the Wookmark jQuery plug-in.">
+  <meta name="author" content="Christoph Ono, Sebastian Helzle">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <!-- Global CSS for the page and tiles -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Specific CSS for the tiles -->
+  <link rel="stylesheet" href="./css/style.css">
+
+<style>
+#filters{
+	overflow: hidden;
+}
+	#filters li{
+		width: auto;
+		display: inline-block;
+		padding: 10px 20px;
+		float: none;
+
+	}
+	
+	h1{
+		text-align: center;
+		padding: 30px 0;
+	}
+
+	#tiles li p.title {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0 0 0px;
+    padding-bottom: 10px;
+    /*border-bottom: 1px solid #999;*/
+}
+#tiles li {
+	max-height: 1000px;
+	overflow: hidden;
+	box-shadow: 0px 4px 14px rgba(0,0,0,0.2);
+}
+
+#tiles li:hover{
+		box-shadow: 0px 4px 14px rgba(0,0,0,0.3);
+	}
+#tiles li p.more {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0 0 0px;
+    line-height: 24px;
+}
+#tiles li img{
+	
+}
+.imgbox{max-height: 960px;overflow: hidden;border: 1px solid #eee; }
+</style>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+      <h1>那些走过的日子</h1>
+    </header>
+
+    
+    <ol id="filters">
+      <li data-filter="pc">电脑端</li>
+      <li data-filter="m">手机端</li>
+      <li data-filter="v">响应式</li>
+      <li data-filter="h">H5动画</li>
+      <li data-filter="art">全部</li>
+    </ol>
+    <br/>
+
+    <div id="main" role="main">
+
+      <ul id="tiles">
+
+      	<li data-filter-class='["pc", "art"]'>
+        	<p class="title">停车场云系统官网</p>
+          <div class="imgbox">
+          	<img src="./sample-images/14.png" height="auto" width="300">
+          </div>
+          
+        </li>
+
+        <li data-filter-class='["m", "art"]'>
+        	<p class="title">停车场云系统官网</p>
+          <div class="imgbox">
+          	<img src="./sample-images/13.png" height="auto" width="300">
+          </div>
+          
+        </li>
+        
+<li data-filter-class='["pc", "art"]'>
+        	<p class="title">金融公司官网</p>
+          <div class="imgbox">
+          	<img src="./sample-images/5.png" height="auto" width="300">
+          </div>
+          
+        </li>
+<li data-filter-class='["m", "art"]'>
+        	<p class="title">个人手机端demo</p>
+        	<div class="imgbox">
+          <img src="./sample-images/9.png" height="auto" width="300"></div>
+          
+          
+        </li>
+        <li data-filter-class='["pc", "art"]'>
+        	<p class="title">国旅自由行</p>
+          <div class="imgbox">
+          	<img src="./sample-images/1.png" height="auto" width="300">
+          </div>
+          
+        </li>
+
+<li data-filter-class='["v", "art"]'>
+        	<p class="title">金融直播间</p>
+        	<div class="imgbox">
+          <img src="./sample-images/4.png" height="auto" width="300"></div>
+          
+          
+        </li>
+
+        
+
+        <li data-filter-class='["pc", "art"]'>
+        	<p class="title">国旅环球行</p>
+        	<div class="imgbox">
+          <img src="./sample-images/2.png" height="auto" width="300"></div>
+          
+          
+        </li>
+
+        <li data-filter-class='["v", "art"]'>
+        	<p class="title">react个人博客demo</p>
+        	<div class="imgbox">
+          <img src="./sample-images/8.png" height="auto" width="300"></div>
+          
+        </li>
+
+        <li data-filter-class='["m", "art"]'>
+        	<p class="title">国旅手机端</p>
+        	<div class="imgbox">
+          <img src="./sample-images/3.png" height="auto" width="300"></div>
+          
+        </li>
+
+        <li data-filter-class='["m", "art"]'>
+        	<p class="title">活动页面</p>
+        	<div class="imgbox">
+          <img src="./sample-images/6.png" height="auto" width="300"></div>
+          
+        </li>
+
+
+<li data-filter-class='["m", "art"]'>
+        	<p class="title">手机端金融公司</p>
+          <div class="imgbox">
+          	<img src="./sample-images/7.png" height="auto" width="300">
+          </div>
+          
+        </li>
+
+        <li data-filter-class='["v", "art"]'>
+        	<p class="title">机房监控系统</p>
+          <div class="imgbox">
+          	<img src="./sample-images/10.png" height="auto" width="300">
+          	<img src="./sample-images/11.png" height="auto" width="300">
+          </div>
+          
+        </li>
+
+        <li data-filter-class='["pc", "art"]'>
+        	<p class="title">停车场官网</p>
+          <div class="imgbox">
+          	<img src="./sample-images/12.png" height="auto" width="300">
+          </div>
+          
+        </li>
+
+        <li data-filter-class='["m", "art"]'>
+        	<p class="title">vue全栈demo</p>
+          <div class="imgbox">
+          	<img src="./sample-images/15.png" height="auto" width="300">
+          </div>
+          
+        </li>
+
+        <li data-filter-class='["m","v","art"]'>
+        	<p class="title">vue全栈demo</p>
+          <div class="imgbox">
+          	<img src="./sample-images/16.png" height="auto" width="300">
+          </div>
+          
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- include jQuery -->
+  <script src="./libs/jquery.min.js"></script>
+
+  <!-- Include the imagesLoaded plug-in -->
+  <script src="./libs/jquery.imagesloaded.js"></script>
+
+  <!-- Include the plug-in -->
+  <script src="./libs/jquery.wookmark.min.js"></script>
+
+  <!-- Once the page is loaded, initalize the plug-in. -->
+  <script type="text/javascript">
+    (function ($){
+      $('#tiles').imagesLoaded(function() {
+        // Prepare layout options.
+        var options = {
+          autoResize: true, // This will auto-update the layout when the browser window is resized.
+          container: $('#main'), // Optional, used for some extra CSS styling
+          offset: 30, // Optional, the distance between grid items
+          itemWidth: 340, // Optional, the width of a grid item
+          fillEmptySpace: true // Optional, fill the bottom of each column with widths of flexible height
+        };
+
+        // Get a reference to your grid items.
+        var handler = $('#tiles li'),
+            filters = $('#filters li');
+
+        // Call the layout function.
+        handler.wookmark(options);
+
+        /**
+         * When a filter is clicked, toggle it's active state and refresh.
+         */
+        var onClickFilter = function(event) {
+          var item = $(event.currentTarget),
+              activeFilters = [];
+          item.toggleClass('active');
+
+          // Collect active filter strings
+          filters.filter('.active').each(function() {
+            activeFilters.push($(this).data('filter'));
+          });
+
+          handler.wookmarkInstance.filter(activeFilters, 'or');
+        }
+
+        // Capture filter click events.
+        filters.click(onClickFilter);
+      });
+    })(jQuery);
+  </script>
+
+</div>
+</body>
+</html>
