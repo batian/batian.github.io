@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>ligoudan</title>
+		<title>李狗蛋</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -16,6 +16,34 @@
 		</noscript>
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+			.logo{
+				width: 100px;
+				height: 100px;
+				background: #fff;
+				display: inline-block;
+				margin-bottom: 1em;
+				display: none;
+			}
+			#header{
+				top: -5em;
+			}
+			#header nav a span{
+				display: block;
+				margin-top: 10px;
+			}
+			#header nav a{
+				transition: all 0.5s;
+			}
+			#header nav a:hover{
+				font-size:1em;
+				transform: translateY(-10px);
+			}
+			#header nav li{
+				margin:1em; 
+				height: 6em;
+			}
+		</style>
 	</head>
 	<body class="loading">
 		<div id="wrapper">
@@ -25,15 +53,16 @@
 
 				<!-- Header -->
 					<header id="header">
+						<div class="logo"></div>
 						<h1>LIGOUDAN</h1>
-						<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
+						<p>只要有共鸣 无声亦动听</p>
 						<nav>
 							<ul>
-								<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-								<li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-								<li><a href="#" class="fa fa-dribbble"><span>Dribbble</span></a></li>
-								<li><a href="#" class="fa fa-github"><span>Github</span></a></li>
-								<li><a href="#" class="fa fa-envelope-o"><span>Email</span></a></li>
+								<li><a  href="#" class="fa fa-user"><span>About</span></a></li>
+								<li><a href="#" class="fa fa-file-o"><span>Works</span></a></li>
+								<li><a target="_blank" href="http://www.vichily.com/" class="fa fa-dribbble"><span>Blog</span></a></li>
+								<li><a href="https://github.com/vichily" class="fa fa-github"><span>Github</span></a></li>
+								<li><a href="mailto:vichily@outlook.com" class="fa fa-envelope-o"><span>Email</span></a></li>
 							</ul>
 						</nav>
 					</header>
